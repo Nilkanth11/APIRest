@@ -1,8 +1,16 @@
-Feature: Title of your feature
+@get
+Feature: Verify dummy rest APIs request for GET
   I want to use this template for my feature file
 
-  Scenario: Title of your scenario
-    Given set the base url as 'baseurl'
-    And user hit get api '/v1/forecast'
+  Scenario: User verify GET request
+    Given set the base url as 'baseuri'
+    And user hit get api '/api/v1/employees'
     When verify response code should be 200
-   # And response should have value '' at 'jsonpath'
+    And response should have value 'Tiger Nixon' at 'data[0].employee_name'
+
+  Scenario: User verify GET request with ID
+    And user hit get api '/api/v1/employee/1'
+    When verify response code should be 200
+    And response should have value 'Tiger Nixon' at 'data.employee_name'
+    And response should have value '61' at 'data.employee_age'
+    And response should have value 'success' at 'status'

@@ -11,7 +11,10 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 		features = { "resources/features/" }, 
 		glue = { "stepdefs"}, 
 		plugin = {"pretty","html:target/html/cucumber-report.html","json:target/json/file.json"},
-		monochrome = true
+		tags = "@get,@post",
+		monochrome = true,
+		dryRun = false
+		
 		)
 public class MyTestRunner extends AbstractTestNGCucumberTests{
 	

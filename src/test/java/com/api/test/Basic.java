@@ -1,4 +1,4 @@
-package APIRest.APIRest;
+package com.api.test;
 
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
