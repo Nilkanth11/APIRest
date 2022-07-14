@@ -8,9 +8,9 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = { "src/test/resources/AppFeatures/" }, 
-		glue = { "stepdefinitions", "AppHooks" }, 
-		plugin = {"pretty","html:target/cucumber-reports"},
+		features = { "resources/features/" }, 
+		glue = { "stepdefs"}, 
+		plugin = {"pretty","html:target/html/cucumber-report.html","json:target/json/file.json"},
 		monochrome = true
 		)
 public class MyTestRunner extends AbstractTestNGCucumberTests{
