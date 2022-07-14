@@ -1,4 +1,4 @@
-package APIRest.APIRest;
+package com.api.test;
 
 import static org.hamcrest.Matchers.equalTo;
 
