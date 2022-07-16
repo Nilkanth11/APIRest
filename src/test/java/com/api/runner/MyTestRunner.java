@@ -15,7 +15,6 @@ import net.masterthought.cucumber.Configuration;
 import net.masterthought.cucumber.ReportBuilder;
 import net.masterthought.cucumber.Reportable;
 import net.masterthought.cucumber.json.support.Status;
-import net.masterthought.cucumber.presentation.PresentationMode;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = { "resources/features/" }, glue = { "stepdefs", "hooks" }, plugin = { "pretty",
