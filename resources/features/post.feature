@@ -5,4 +5,4 @@ Feature: Verify dummy rest APIs request for POST
   Scenario: User verify POST request
     Given set the base url as 'baseuri'
     And user hit post api '/api/v1/create'
-    When verify response code should be 200
+    When response should have status code 200

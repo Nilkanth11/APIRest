@@ -16,6 +16,7 @@ public class PostAPI extends TestBase{
 	public PostAPI(TestContext tContext) {
 		this.testContext = tContext;
 	}
+	
 	String baseurl = PropertiesCache.getInstance().getProperty("baseuri");
 	
 	@Given("user hit post api {string}")
