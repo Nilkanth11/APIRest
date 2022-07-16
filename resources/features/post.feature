@@ -1,5 +1,5 @@
 @post
-Feature: Verify dummy rest APIs request for GET
+Feature: Verify dummy rest APIs request for POST
   I want to use this template for my feature file
 
   Scenario: User verify POST request

@@ -9,9 +9,9 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features = { "resources/features/" }, 
-		glue = { "stepdefs"}, 
+		glue = { "stepdefs","hooks"}, 
 		plugin = {"pretty","html:target/html/cucumber-report.html","json:target/json/file.json"},
-		tags = "@get,@post",
+		//tags = "@get,@post",
 		monochrome = true,
 		dryRun = false
 		
